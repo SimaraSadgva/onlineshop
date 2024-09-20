@@ -243,7 +243,7 @@
     
 
 
-    const cardAnimals = document.getElementById('cardAnimals');
+    const cardShopping = document.getElementById('cardShopping');
     const basketSidebar = document.getElementById('basket-sidebar');
     const basketContent = document.getElementById('basket-content');
     const openBasketBtn = document.getElementById('open-basket');
@@ -253,7 +253,7 @@
     function getFullCards(){
         
     data.map(card => {
-        cardAnimals.innerHTML += `
+        cardShopping.innerHTML += `
             <div class="bg-white rounded-lg shadow-md max-w-[300px]">
                 <img src="${card.image}" alt="${card.name}" class="m-auto h-[200px] object-cover rounded-t-lg">
                 <div class=" p-4">
@@ -274,12 +274,12 @@
         section1.style.display = "block";
         getFullCards();
         } else {
-        cardAnimals.innerHTML = "";
+        cardShopping.innerHTML = "";
         data.map((card) => {
             if (
             card.title.toLocaleLowerCase().startsWith(inpVal.toLocaleLowerCase())
             ) {
-            cardAnimals.innerHTML += `
+            cardShopping.innerHTML += `
             <div class="bg-white rounded-lg shadow-md max-w-[300px]">
                 <img src="${card.image}" alt="${card.name}" class="m-auto h-[200px] object-cover rounded-t-lg">
                 <div class="p-4">

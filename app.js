@@ -267,6 +267,7 @@
         `;
         
     })}; getFullCards()
+    
 
     function searchFunk() {
         const inpVal = document.getElementById("search").value;
@@ -284,7 +285,7 @@
                 <img src="${card.image}" alt="${card.name}" class="m-auto h-[200px] object-cover rounded-t-lg">
                 <div class="p-4">
                 <div class="flex justify-between">
-                <button type="button" onclick="addToBasket('${card.title}', '${card.price}', '${card.image}')" class="bg-orange-400 text-white px-4 py-1 font-semibold rounded lg:block dark:bg-violet-600 dark:text-gray-50">add to basket</button>
+                <button type="button" onclick="addToBasket('${card.title}', '${card.price}', '${card.image}')" class="bg-orange-400 text-white px-4 py-1 font-semibold rounded lg:block">add to basket</button>
                 </div>
                 <h2 class="text-l font-semibold mt-2 text-blue-900">${card.title}</h2>
                 <p class="text-gray-600">${card.price}</p>
